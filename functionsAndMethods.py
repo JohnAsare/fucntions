@@ -10,9 +10,13 @@ lesser_of_two_evens(2,5) --> 5 """
 
 
 def lesser_of_two_evens(a, b):
-
+    if a and b % 2 == 0:
+        if a < b:
+            return a
+        else:
+            return b
 
 
 print(lesser_of_two_evens(2, 4))
-print(lesser_of_two_evens(2, 5))
+#print(lesser_of_two_evens(2, 5))
 
