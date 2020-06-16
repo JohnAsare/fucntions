@@ -7,3 +7,9 @@ same letter
 animal_crackers('Levelheaded Llama') --> True
 animal_crackers('Crazy Kangaroo') --> False """
 
+
+def animal_crackers(text):
+    print(text.split())
+
+animal_crackers('Levelheaded Llama')
+#animal_crackers('Crazy Kangaroo')
