@@ -16,7 +16,13 @@ def lesser_of_two_evens(a, b):
         else:
             return b
 
+    elif a or b % 2 != 0:
+        if a < b:
+            return b
+        else:
+            return a
+
 
 print(lesser_of_two_evens(2, 4))
-#print(lesser_of_two_evens(2, 5))
+print(lesser_of_two_evens(4, 7))
 
