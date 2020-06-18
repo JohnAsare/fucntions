@@ -30,7 +30,6 @@ def lesser_of_two_evens(a, b):
         return max(a, b)
 
 
-
 print(lesser_of_two_evens(2, 4))
 print(lesser_of_two_evens(3, 5))
 
