@@ -9,11 +9,13 @@ has_33([3, 1, 3]) → False """
 
 
 def has_33(nums):
-    for index, number in enumerate(nums):
-        if number != 3:
-            return False
+    for pos in range(len(nums)-1):
+        if nums[pos] == 3 and nums[pos + 1] == 3:
+            return True
+    return False
+
 
 print(has_33([1, 3, 3]))
-#print((has_33([1, 3, 1, 3])))
-#print(has_33([3, 1, 3]))
+print((has_33([1, 3, 1, 3])))
+print(has_33([3, 1, 3]))
 
