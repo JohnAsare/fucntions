@@ -10,9 +10,17 @@ animal_crackers('Crazy Kangaroo') --> False """
 
 def animal_crackers(text):
     separate_text = text.split()
+    first_word = separate_text[0]
+    last_word = separate_text[1]
 
-    for letter in range(len(separate_text[0])):
-        return letter
+
+    for letter in first_word:
+        for x_letter in last_word:
+            if letter == x_letter:
+                return True
+            else:
+                return False
+
 
 print(animal_crackers('Levelheaded Llama'))
-#print(animal_crackers('Crazy Kangaroo'))
+print(animal_crackers('Crazy Kangaroo'))
