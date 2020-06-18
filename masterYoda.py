@@ -9,7 +9,8 @@ master_yoda('We are ready') --> 'ready are We' """
 
 
 def master_yoda(text):
-    return text
+    splt = text.split()
+    return splt[2]
 
 
 print((master_yoda('I am home')))
