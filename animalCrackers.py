@@ -13,7 +13,6 @@ def animal_crackers(text):
     first_word = separate_text[0]
     last_word = separate_text[1]
 
-
     for letter in first_word:
         for x_letter in last_word:
             if letter == x_letter:
@@ -24,3 +23,5 @@ def animal_crackers(text):
 
 print(animal_crackers('Levelheaded Llama'))
 print(animal_crackers('Crazy Kangaroo'))
+print(animal_crackers('John Asare'))
+print(animal_crackers('Akosua Asare'))
