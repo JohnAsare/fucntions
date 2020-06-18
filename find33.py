@@ -9,9 +9,11 @@ has_33([3, 1, 3]) → False """
 
 
 def has_33(nums):
-    pass
+    for number in nums:
+        if nums[0] != 3:
+            print(nums[0], False)
 
 
-has_33([1, 3, 3])
-has_33([1, 3, 1, 3])
-has_33([3, 1, 3])
+#has_33([1, 3, 3])
+(has_33([1, 3, 1, 3]))
+#has_33([3, 1, 3])
