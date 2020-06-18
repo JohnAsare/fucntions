@@ -10,10 +10,15 @@ has_33([3, 1, 3]) → False """
 
 def has_33(nums):
     for number in nums:
-        if nums[0] != 3:
-            print(nums[0], False)
+        if number == 3:
+            found = [number]
+            if found == 33:
+                return True
+        else:
+            return False
+        print(found)
 
 
 #has_33([1, 3, 3])
-(has_33([1, 3, 1, 3]))
+print((has_33([1, 3, 1, 3])))
 #has_33([3, 1, 3])
