@@ -15,3 +15,4 @@ def master_yoda(text):
 
 print((master_yoda('I am home')))
 print(master_yoda('We are ready'))
+print(master_yoda('John Asare is going to school'))
