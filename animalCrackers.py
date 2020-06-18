@@ -13,12 +13,10 @@ def animal_crackers(text):
     first_word = separate_text[0]
     last_word = separate_text[1]
 
-    for letter in first_word:
-        for x_letter in last_word:
-            if letter == x_letter:
-                return True
-            else:
-                return False
+    if first_word[0] == last_word[0]:
+        return True
+    else:
+        return False
 
 
 print(animal_crackers('Levelheaded Llama'))
