@@ -15,8 +15,11 @@ def blackjack(a, b, c):
     total = sum((a, b, c))
     if total <= 21:
         return total
+    elif total > 21 and (a == 11 or b == 11 or c == 11):
+        total -= 10
+        return total
 
 
-blackjack(5, 6, 7)
-blackjack(9, 9, 9)
-blackjack(9, 9, 11)
+print(blackjack(5, 6, 7))
+print(blackjack(9, 9, 9))
+print(blackjack(9, 9, 11))
