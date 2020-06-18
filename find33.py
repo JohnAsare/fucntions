@@ -9,11 +9,9 @@ has_33([3, 1, 3]) → False """
 
 
 def has_33(nums):
-    for number in nums:
-        if number == 3:
-            found = [number]
-            print(found)
-
+    for index, number in enumerate(nums):
+        if number != 3:
+            return False
 
 print(has_33([1, 3, 3]))
 #print((has_33([1, 3, 1, 3])))
