@@ -10,8 +10,8 @@ master_yoda('We are ready') --> 'ready are We' """
 
 def master_yoda(text):
     splt = text.split()
-    return splt[2]
+    return ' '.join(splt[::-1])
 
 
 print((master_yoda('I am home')))
-#print(master_yoda('We are ready'))
+print(master_yoda('We are ready'))
