@@ -11,7 +11,7 @@ lesser_of_two_evens(2,5) --> 5 """
 
 
 def lesser_of_two_evens(a, b):
-    if a and b % 2 == 0:
+    if a % 2 == 0 and b % 2 == 0:
         if a < b:
             return a
         else:
