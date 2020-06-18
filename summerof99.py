@@ -10,9 +10,11 @@ summer_69([2, 1, 6, 9, 11]) --> 14 """
 
 
 def summer_69(arr):
-    pass
+    for pos in range(len(arr)):
+        if arr[pos] == 6:
+            p
 
 
-summer_69([1, 3, 5])
-summer_69([4, 5, 6, 7, 8, 9])
-summer_69([2, 1, 6, 9, 11])
+#summer_69([1, 3, 5])
+print(summer_69([4, 5, 6, 7, 8, 9]))
+#summer_69([2, 1, 6, 9, 11])
