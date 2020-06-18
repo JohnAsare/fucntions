@@ -13,10 +13,10 @@ def has_33(nums):
         if number == 3:
             found = [number]
             if found == 33:
+                print(found)
                 return True
         else:
             return False
-        print(found)
 
 
 #has_33([1, 3, 3])
