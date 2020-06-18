@@ -8,8 +8,11 @@ paper_doll('Mississippi') --> 'MMMiiissssssiiippppppiii' """
 
 
 def paper_doll(text):
+    reformat = ' '
     for char in text:
-        print(char * 3)
+        reformat += (char * 3)
+    return reformat
+
 
 print((paper_doll('Hello')))
-paper_doll('Mississippi')
+print(paper_doll('Mississippi'))
