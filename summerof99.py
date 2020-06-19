@@ -10,13 +10,24 @@ summer_69([2, 1, 6, 9, 11]) --> 14 """
 
 
 def summer_69(arr):
-
     keep = []
+    move_on = True
+
     for number in arr:
-        while number != 6:
-            keep.append(number)
-            break
-    print(keep)
+        while move_on:
+            if number != 6:
+                keep.append(number)
+                break
+            else:
+                move_on = False
+
+        while not move_on:
+            if number != 9:
+                break
+            else:
+                move_on = True
+                break
+    return sum(keep)
 
 #print(summer_69([1, 3, 5]))
 print(summer_69([4, 5, 6, 7, 8, 9]))
